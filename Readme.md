@@ -12,4 +12,4 @@
    Chọn 'Bearer token' và dán accessToken vừa nhận vào ô Token
 
 3. File import postman được đặt cùng level với file readme
-4. Thư mục ảnh demo được nằm trong thư mục imageDemo đặt cùng level với nodemodule
+4. Thư mục ảnh demo được nằm trong thư mục imageDemo đặt cùng level với thư mục src
