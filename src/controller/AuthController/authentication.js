@@ -7,20 +7,6 @@ require("dotenv").config()
 
 let refreshTokens = [] // binh thuong se luu vao redis cho khoi bi trung lap
 
-// const checkUserIsLogin = async (req, res, next) => {
-//    try {
-//       const user = await db.User.findOne({ where: { id: req.user.id } })
-//       if (!user) {
-//          return res.status(200).json({ success: false, message: "User not found" })
-//       }
-
-//       return res.json({ success: true, user })
-//    } catch (error) {
-//       console.log("e", error)
-//       return res.status(500).json({ success: false, message: "Internal error server" })
-//    }
-// }
-
 const register = async (req, res) => {
    const { username, password, fullName } = req.body
    if (!username || !password || !fullName) {
@@ -141,15 +127,8 @@ const requestRefreshToken = (req, res) => {
    })
 }
 
-const logout = (req, res) => {
-   // res.clearCookie("refreshToken")
-   refreshTokens = refreshTokens.filter((token) => token !== req.body.refreshToken)
-   return res.status(200).json({ success: true, message: "Logout successfully" })
-}
-
 module.exports = {
    register,
    login,
-   logout,
    requestRefreshToken,
 }

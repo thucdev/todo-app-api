@@ -202,7 +202,6 @@ let assignTodo = async (data) => {
             //check is todo exist
             let todo = await dbJob.findOne(data.jobId)
 
-            console.log("todo", todo)
             if (!todo || todo.userId === data.userId) {
                reject({
                   success: false,

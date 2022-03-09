@@ -8,11 +8,7 @@ const dbConnection = async () => {
       username: "root",
       password: null,
       database: "todo_app_api",
-      entities: [
-         require("../entity/statusSchema.js"),
-         require("../entity/usersSchema.js"),
-         require("../entity/jobsSchema.js"),
-      ],
+      entities: [require("../entity/usersSchema.js"), require("../entity/jobsSchema.js")],
       synchronize: true,
       logging: false,
       timezone: "+07:00",

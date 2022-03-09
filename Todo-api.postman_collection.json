@@ -1,0 +1,332 @@
+{
+	"info": {
+		"_postman_id": "3e3ea1ff-fca0-468b-a46a-cecc2dd2bc0c",
+		"name": "Todo-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "sign-up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "user1",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "userpass",
+							"type": "default"
+						},
+						{
+							"key": "fullName",
+							"value": "John son",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/sign-up",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sign-up"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sign-in",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/sign-in",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sign-in"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add-todo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userId",
+							"value": "1",
+							"type": "default"
+						},
+						{
+							"key": "name",
+							"value": "todo1",
+							"type": "default"
+						},
+						{
+							"key": "description",
+							"value": "mieu ta 4",
+							"type": "default"
+						},
+						{
+							"key": "dateOfCompletion",
+							"value": "22/2/2022",
+							"type": "default"
+						},
+						{
+							"key": "status",
+							"value": "NEW",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/add-todo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"add-todo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-todo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "jobId",
+							"value": "1",
+							"type": "default"
+						},
+						{
+							"key": "name",
+							"value": "Todo updated",
+							"type": "default"
+						},
+						{
+							"key": "description",
+							"value": "Descscription todo update",
+							"type": "default"
+						},
+						{
+							"key": "userId",
+							"value": "1",
+							"type": "default"
+						},
+						{
+							"key": "dateOfCompletion",
+							"value": "23/3/2023",
+							"type": "default"
+						},
+						{
+							"key": "status",
+							"value": "NEW",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/update-todo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"update-todo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-todo/3",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "status",
+							"value": "COMPLETE",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/delete-todo/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"delete-todo",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-all-todo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/get-all-todo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"get-all-todo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-todo-by-id/4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/get-todo-by-id/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"get-todo-by-id",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-all-user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/get-all-user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"get-all-user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "assign-todo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userId",
+							"value": "1",
+							"type": "default"
+						},
+						{
+							"key": "jobId",
+							"value": "6",
+							"type": "default"
+						},
+						{
+							"key": "userAssignedId",
+							"value": "3",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/assign-todo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"assign-todo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-all-task-by-user/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/get-all-task-by-user/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"get-all-task-by-user",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

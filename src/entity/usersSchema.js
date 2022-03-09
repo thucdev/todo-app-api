@@ -20,12 +20,4 @@ module.exports = new EntitySchema({
          type: "varchar",
       },
    },
-   // relations: {
-   //    categories: {
-   //       target: "Jobs",
-   //       type: "one-to-many",
-   //       joinTable: true,
-   //       cascade: true,
-   //    },
-   // },
 })

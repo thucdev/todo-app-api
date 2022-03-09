@@ -49,7 +49,7 @@ let getAllTodo = async (req, res) => {
       console.log(error)
       return res.status(200).json({
          success: false,
-         message: "Error when trying to delete todo",
+         message: "Error when trying to get all todos",
       })
    }
 }
@@ -63,7 +63,7 @@ let getTodoById = async (req, res) => {
       console.log(error)
       return res.status(200).json({
          success: false,
-         message: "Error when trying to delete todo",
+         message: "Error when trying to get todo",
       })
    }
 }
@@ -76,7 +76,7 @@ let getAllUser = async (req, res) => {
       console.log(error)
       return res.status(200).json({
          success: false,
-         message: "Error when trying to delete todo",
+         message: "Error when trying to get all users",
       })
    }
 }
@@ -103,7 +103,7 @@ let getAllTaskByUser = async (req, res) => {
       console.log(error)
       return res.status(200).json({
          success: false,
-         message: "Error when trying to delete todo",
+         message: "Error when trying to get all task for user ",
       })
    }
 }

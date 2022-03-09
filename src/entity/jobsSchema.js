@@ -34,18 +34,4 @@ module.exports = new EntitySchema({
          default: () => "CURRENT_TIMESTAMP",
       },
    },
-   relations: {
-      // jobs: {
-      //    target: "Users",
-      //    type: "many-to-one",
-      //    joinTable: true,
-      //    cascade: true,
-      // },
-      // status: {
-      //    target: "Status",
-      //    type: "one-to-many",
-      //    joinTable: true,
-      //    cascade: true,
-      // },
-   },
 })
